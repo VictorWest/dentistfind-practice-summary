@@ -3,8 +3,6 @@
 ## Table of Contents
 - Installation
 - Question 2 Answers
-- License
-- Contact
 
 ## Installation
 
