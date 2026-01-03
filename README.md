@@ -6,20 +6,57 @@
 
 ## Installation
 
+Prerequisites:
+- Node.js (>= 16)
+- npm (or pnpm / yarn)
+
+Quick setup:
+1. Clone the repository
+   ```bash
+   git clone https://github.com/VictorWest/dentistfind-practice-summary.git
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+- Start the development server
+  ```bash
+  npm run dev
+  ```
+  Then open your browser at: http://localhost:5173
+
+- Build for production
+  ```bash
+  npm run build
+  ```
+
+- Preview production build locally
+  ```bash
+  npm run preview
+  ```
+
+- Lint the project
+  ```bash
+  npm run lint
+  ```
+
 
 ## Question 2 Answers
 
 ### 1. Component & Styling Decisions
-- 1. The project is structured with a main component and two subcomponents. This is for reusability and extensibility. The PracticeSummaryCard receives data props and is able to supply reusable UI components, which can be replicated multiple times. And so does the Trend Sparkline component.
-- 2. I chose Tailwind as my styling approach because of its high optimisation in code and its easily readable format. With Tailwind, my productivity in styling has been 10x.
-- 3. I ensured visual consisency by using flexible classes such as padding and margins to shape components, as well as consistent font size and roundness of card. I ensured responsiveness by using the grid layout where needed and flexbox where needed, and ensuring screen breakpoints are given specific style functions.
+1. The project is structured with a main component and two subcomponents. This is for reusability and extensibility. The PracticeSummaryCard receives data props and is able to supply reusable UI components, which can be replicated multiple times. And so does the Trend Sparkline component.
+2. I chose Tailwind as my styling approach because of its high optimisation in code and its easily readable format. With Tailwind, my productivity in styling has been 10x.
+3. I ensured visual consisency by using flexible classes such as padding and margins to shape components, as well as consistent font size and roundness of card. I ensured responsiveness by using the grid layout where needed and flexbox where needed, and ensuring screen breakpoints are given specific style functions.
 
 ### 2. Scaling & Real-World Use
-- 1. 
+1. 
   - Understand the specifics of the PracticeFuel dashboard
   - Extend component size (height & weight when necessary)
   - Adjust card design to match the overall theme
-- 2. I would include a visual effect to flip te card to the back, on hover. This would be done with animations
+2. I would include a visual effect to flip te card to the back, on hover. This would be done with animations
 
 ### 3. Time Management
   - Understand Requirements / Setup: 15 minutes
